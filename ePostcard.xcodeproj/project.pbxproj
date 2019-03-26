@@ -21,6 +21,7 @@
 		2AC25D87224A61F1007F50C4 /* PostcardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D86224A61F1007F50C4 /* PostcardReference.swift */; };
 		2AC25D8A224A7620007F50C4 /* CollectionViewCellMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D89224A7620007F50C4 /* CollectionViewCellMain.swift */; };
 		2AC25D8C224A7819007F50C4 /* PostcardDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D8B224A7819007F50C4 /* PostcardDAO.swift */; };
+		2AC25D8F224A9A95007F50C4 /* ViewControllerViewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D8E224A9A95007F50C4 /* ViewControllerViewPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2AC25D86224A61F1007F50C4 /* PostcardReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardReference.swift; sourceTree = "<group>"; };
 		2AC25D89224A7620007F50C4 /* CollectionViewCellMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellMain.swift; sourceTree = "<group>"; };
 		2AC25D8B224A7819007F50C4 /* PostcardDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardDAO.swift; sourceTree = "<group>"; };
+		2AC25D8E224A9A95007F50C4 /* ViewControllerViewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		2A63DA80224995550007A324 /* ePostcard */ = {
 			isa = PBXGroup;
 			children = (
+				2AC25D8D224A9A64007F50C4 /* View Postcard */,
 				2AC25D88224A75DA007F50C4 /* Main */,
 				2AC25D83224A57D1007F50C4 /* Edit Back */,
 				2AC25D82224A494B007F50C4 /* Select Image */,
@@ -129,6 +132,14 @@
 				2AC25D89224A7620007F50C4 /* CollectionViewCellMain.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		2AC25D8D224A9A64007F50C4 /* View Postcard */ = {
+			isa = PBXGroup;
+			children = (
+				2AC25D8E224A9A95007F50C4 /* ViewControllerViewPost.swift */,
+			);
+			path = "View Postcard";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				2AC25D7F224A46CA007F50C4 /* TableViewControllerPostBacks.swift in Sources */,
 				2AC25D87224A61F1007F50C4 /* PostcardReference.swift in Sources */,
 				2A63DA8A224995550007A324 /* ePostcard.xcdatamodeld in Sources */,
+				2AC25D8F224A9A95007F50C4 /* ViewControllerViewPost.swift in Sources */,
 				2A63DA84224995550007A324 /* ViewController.swift in Sources */,
 				2A63DA82224995550007A324 /* AppDelegate.swift in Sources */,
 				2AC25D8A224A7620007F50C4 /* CollectionViewCellMain.swift in Sources */,

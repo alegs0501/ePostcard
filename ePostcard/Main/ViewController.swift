@@ -65,6 +65,19 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         retrieveData()
         collectionView.reloadData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "viewPostcard" {
+            if let indexPath = collectionView.indexPathsForSelectedItems{
+                // Pass the selected object to the new view controller.
+                let iPath: NSIndexPath = indexPath[0] as NSIndexPath
+                PostcardReference.front = list[iPath.row].front
+                PostcardReference.back = list[iPath.row].back
+                
+                
+            }
+        }
+    }
 
 
 }
