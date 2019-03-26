@@ -19,6 +19,8 @@
 		2AC25D81224A46E9007F50C4 /* TableViewCellPostBacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D80224A46E9007F50C4 /* TableViewCellPostBacks.swift */; };
 		2AC25D85224A580F007F50C4 /* ViewControllerEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D84224A580F007F50C4 /* ViewControllerEdit.swift */; };
 		2AC25D87224A61F1007F50C4 /* PostcardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D86224A61F1007F50C4 /* PostcardReference.swift */; };
+		2AC25D8A224A7620007F50C4 /* CollectionViewCellMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D89224A7620007F50C4 /* CollectionViewCellMain.swift */; };
+		2AC25D8C224A7819007F50C4 /* PostcardDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D8B224A7819007F50C4 /* PostcardDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		2AC25D80224A46E9007F50C4 /* TableViewCellPostBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellPostBacks.swift; sourceTree = "<group>"; };
 		2AC25D84224A580F007F50C4 /* ViewControllerEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEdit.swift; sourceTree = "<group>"; };
 		2AC25D86224A61F1007F50C4 /* PostcardReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardReference.swift; sourceTree = "<group>"; };
+		2AC25D89224A7620007F50C4 /* CollectionViewCellMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellMain.swift; sourceTree = "<group>"; };
+		2AC25D8B224A7819007F50C4 /* PostcardDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +72,12 @@
 		2A63DA80224995550007A324 /* ePostcard */ = {
 			isa = PBXGroup;
 			children = (
+				2AC25D88224A75DA007F50C4 /* Main */,
 				2AC25D83224A57D1007F50C4 /* Edit Back */,
 				2AC25D82224A494B007F50C4 /* Select Image */,
 				2AC25D7B224A466D007F50C4 /* Postcard Backs */,
 				2AC25D78224A40BC007F50C4 /* Models */,
 				2A63DA81224995550007A324 /* AppDelegate.swift */,
-				2A63DA83224995550007A324 /* ViewController.swift */,
 				2A63DA85224995550007A324 /* Main.storyboard */,
 				2A63DA8B224995580007A324 /* Assets.xcassets */,
 				2A63DA8D224995580007A324 /* LaunchScreen.storyboard */,
@@ -88,6 +92,7 @@
 			children = (
 				2AC25D79224A414A007F50C4 /* PostCardBacks.swift */,
 				2AC25D86224A61F1007F50C4 /* PostcardReference.swift */,
+				2AC25D8B224A7819007F50C4 /* PostcardDAO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -115,6 +120,15 @@
 				2AC25D84224A580F007F50C4 /* ViewControllerEdit.swift */,
 			);
 			path = "Edit Back";
+			sourceTree = "<group>";
+		};
+		2AC25D88224A75DA007F50C4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2A63DA83224995550007A324 /* ViewController.swift */,
+				2AC25D89224A7620007F50C4 /* CollectionViewCellMain.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +211,8 @@
 				2A63DA8A224995550007A324 /* ePostcard.xcdatamodeld in Sources */,
 				2A63DA84224995550007A324 /* ViewController.swift in Sources */,
 				2A63DA82224995550007A324 /* AppDelegate.swift in Sources */,
+				2AC25D8A224A7620007F50C4 /* CollectionViewCellMain.swift in Sources */,
+				2AC25D8C224A7819007F50C4 /* PostcardDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

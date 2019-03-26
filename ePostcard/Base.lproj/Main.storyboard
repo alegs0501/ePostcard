@@ -45,19 +45,64 @@
                                     <segue destination="Qdm-s6-t1u" kind="show" id="BVr-vP-4wB"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9Wf-3D-Inv">
+                                <rect key="frame" x="8" y="163.5" width="359" height="340"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="340" id="xfR-2S-sVR"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ow2-0z-MOm">
+                                    <size key="itemSize" width="280" height="280"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellMain" id="DmI-06-e46" customClass="CollectionViewCellMain" customModule="ePostcard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="30" width="280" height="280"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe" translatesAutoresizingMaskIntoConstraints="NO" id="7Wf-3G-mpX">
+                                                    <rect key="frame" x="8" y="8" width="264" height="264"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="7Wf-3G-mpX" secondAttribute="trailing" constant="8" id="Ab2-uv-eeX"/>
+                                            <constraint firstItem="7Wf-3G-mpX" firstAttribute="leading" secondItem="DmI-06-e46" secondAttribute="leading" constant="8" id="EiI-RY-2Ja"/>
+                                            <constraint firstAttribute="bottom" secondItem="7Wf-3G-mpX" secondAttribute="bottom" constant="8" id="XCS-pG-deY"/>
+                                            <constraint firstItem="7Wf-3G-mpX" firstAttribute="top" secondItem="DmI-06-e46" secondAttribute="top" constant="8" id="m4H-w9-Efq"/>
+                                        </constraints>
+                                        <size key="customSize" width="280" height="280"/>
+                                        <connections>
+                                            <outlet property="postcardImage" destination="7Wf-3G-mpX" id="5pr-h8-DiL"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Ec-Ek-0Vm" secondAttribute="trailing" constant="16" id="9Xc-ne-brk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Ec-Ek-0Vm" secondAttribute="bottom" constant="20" id="CTE-H9-SUi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Wf-3D-Inv" secondAttribute="trailing" constant="8" id="PSB-xX-Uzu"/>
+                            <constraint firstItem="9Wf-3D-Inv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="weS-Xb-ukF"/>
+                            <constraint firstItem="9Wf-3D-Inv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x5H-ov-yoA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="nGl-xE-bFH"/>
+                    <connections>
+                        <outlet property="collectionView" destination="9Wf-3D-Inv" id="GC8-xz-tJB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="131"/>
+            <point key="canvasLocation" x="640.79999999999995" y="130.88455772113943"/>
         </scene>
         <!--Front Image-->
         <scene sceneID="Nfw-0B-Skj">
@@ -196,4 +241,7 @@
             <point key="canvasLocation" x="2885.5999999999999" y="130.88455772113943"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="globe" width="533" height="800"/>
+    </resources>
 </document>
