@@ -59,6 +59,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     @IBAction func unwindToMainController(segue: UIStoryboardSegue) {
+        if list.count > 0 {
+            list.removeAll()
+        }
+        retrieveData()
+        collectionView.reloadData()
     }
 
 

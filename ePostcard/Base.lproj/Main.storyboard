@@ -34,13 +34,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xh1-TD-dhc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUU-mc-NFq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.27464788732394368" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ec-Ek-0Vm">
-                                <rect key="frame" x="319" y="607" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="e6F-lW-648"/>
-                                    <constraint firstAttribute="height" constant="40" id="w3r-jf-AT7"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="209" y="609" width="150" height="38"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.8380281690140845" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="New Postcard">
+                                    <color key="titleColor" red="1" green="0.40746700279999998" blue="0.44771424319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Qdm-s6-t1u" kind="show" id="BVr-vP-4wB"/>
                                 </connections>
@@ -87,9 +95,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xh1-TD-dhc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2oG-W9-V75"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Ec-Ek-0Vm" secondAttribute="trailing" constant="16" id="9Xc-ne-brk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Ec-Ek-0Vm" secondAttribute="bottom" constant="20" id="CTE-H9-SUi"/>
+                            <constraint firstItem="LUU-mc-NFq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ewh-es-qgU"/>
+                            <constraint firstItem="LUU-mc-NFq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KJZ-QS-Jws"/>
+                            <constraint firstItem="xh1-TD-dhc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LHU-j1-gNc"/>
+                            <constraint firstItem="xh1-TD-dhc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OE3-vO-9gT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Wf-3D-Inv" secondAttribute="trailing" constant="8" id="PSB-xX-Uzu"/>
+                            <constraint firstItem="xh1-TD-dhc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ujg-Sx-v1Z"/>
+                            <constraint firstItem="LUU-mc-NFq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rw5-fi-mp6"/>
+                            <constraint firstItem="LUU-mc-NFq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uhT-tJ-44d"/>
                             <constraint firstItem="9Wf-3D-Inv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="weS-Xb-ukF"/>
                             <constraint firstItem="9Wf-3D-Inv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x5H-ov-yoA"/>
                         </constraints>
@@ -242,6 +258,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="409" height="450"/>
         <image name="globe" width="533" height="800"/>
     </resources>
 </document>
