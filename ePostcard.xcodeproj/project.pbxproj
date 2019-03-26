@@ -17,6 +17,8 @@
 		2AC25D7A224A414A007F50C4 /* PostCardBacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D79224A414A007F50C4 /* PostCardBacks.swift */; };
 		2AC25D7F224A46CA007F50C4 /* TableViewControllerPostBacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D7E224A46CA007F50C4 /* TableViewControllerPostBacks.swift */; };
 		2AC25D81224A46E9007F50C4 /* TableViewCellPostBacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D80224A46E9007F50C4 /* TableViewCellPostBacks.swift */; };
+		2AC25D85224A580F007F50C4 /* ViewControllerEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D84224A580F007F50C4 /* ViewControllerEdit.swift */; };
+		2AC25D87224A61F1007F50C4 /* PostcardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D86224A61F1007F50C4 /* PostcardReference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		2AC25D79224A414A007F50C4 /* PostCardBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardBacks.swift; sourceTree = "<group>"; };
 		2AC25D7E224A46CA007F50C4 /* TableViewControllerPostBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerPostBacks.swift; sourceTree = "<group>"; };
 		2AC25D80224A46E9007F50C4 /* TableViewCellPostBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellPostBacks.swift; sourceTree = "<group>"; };
+		2AC25D84224A580F007F50C4 /* ViewControllerEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEdit.swift; sourceTree = "<group>"; };
+		2AC25D86224A61F1007F50C4 /* PostcardReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardReference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		2A63DA80224995550007A324 /* ePostcard */ = {
 			isa = PBXGroup;
 			children = (
+				2AC25D83224A57D1007F50C4 /* Edit Back */,
 				2AC25D82224A494B007F50C4 /* Select Image */,
 				2AC25D7B224A466D007F50C4 /* Postcard Backs */,
 				2AC25D78224A40BC007F50C4 /* Models */,
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				2AC25D79224A414A007F50C4 /* PostCardBacks.swift */,
+				2AC25D86224A61F1007F50C4 /* PostcardReference.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,6 +107,14 @@
 				2A63DA962249A4300007A324 /* ViewControllerFront.swift */,
 			);
 			path = "Select Image";
+			sourceTree = "<group>";
+		};
+		2AC25D83224A57D1007F50C4 /* Edit Back */ = {
+			isa = PBXGroup;
+			children = (
+				2AC25D84224A580F007F50C4 /* ViewControllerEdit.swift */,
+			);
+			path = "Edit Back";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,10 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC25D85224A580F007F50C4 /* ViewControllerEdit.swift in Sources */,
 				2A63DA972249A4300007A324 /* ViewControllerFront.swift in Sources */,
 				2AC25D81224A46E9007F50C4 /* TableViewCellPostBacks.swift in Sources */,
 				2AC25D7A224A414A007F50C4 /* PostCardBacks.swift in Sources */,
 				2AC25D7F224A46CA007F50C4 /* TableViewControllerPostBacks.swift in Sources */,
+				2AC25D87224A61F1007F50C4 /* PostcardReference.swift in Sources */,
 				2A63DA8A224995550007A324 /* ePostcard.xcdatamodeld in Sources */,
 				2A63DA84224995550007A324 /* ViewController.swift in Sources */,
 				2A63DA82224995550007A324 /* AppDelegate.swift in Sources */,

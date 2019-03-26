@@ -14,6 +14,8 @@ class ViewControllerFront: UIViewController {
     
     @IBOutlet weak var filtersScrollView: UIScrollView!
     
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    
     var CIFilterNames = [
         "CIPhotoEffectChrome",
         "CIPhotoEffectFade",
@@ -27,6 +29,8 @@ class ViewControllerFront: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        doneButton.isEnabled = false
 
     }
     
@@ -85,6 +89,10 @@ class ViewControllerFront: UIViewController {
     @IBAction func done(_ sender: Any) {
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        PostcardReference.front = imageView.image
+    }
+    
 }
 
 // MARK: - UINavigationControllerDelegate
@@ -141,6 +149,7 @@ extension ViewControllerFront: UIImagePickerControllerDelegate {
         dismiss(animated: true, completion: nil)
         imageView.image = selectedImage
         loadFilters()
+        doneButton.isEnabled = true
         
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

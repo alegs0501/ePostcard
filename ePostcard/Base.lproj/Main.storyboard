@@ -105,6 +105,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="doneButton" destination="9k2-gI-tf7" id="ahD-SU-7rW"/>
                         <outlet property="filtersScrollView" destination="bOA-kd-ffg" id="5PY-A7-F2h"/>
                         <outlet property="imageView" destination="VVQ-Mq-Pue" id="aVp-4L-tJa"/>
                     </connections>
@@ -142,7 +143,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="backImageView" destination="Ja7-0Z-55J" id="Nvg-O1-gNV"/>
-                                    <segue destination="NLL-Ac-Sy2" kind="show" id="l09-Gt-n1t"/>
+                                    <segue destination="NLL-Ac-Sy2" kind="show" identifier="showImage" id="l09-Gt-n1t"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -157,21 +158,42 @@
             </objects>
             <point key="canvasLocation" x="2162.4000000000001" y="130.88455772113943"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Edit-->
         <scene sceneID="wR7-80-ycj">
             <objects>
-                <viewController id="NLL-Ac-Sy2" sceneMemberID="viewController">
+                <viewController id="NLL-Ac-Sy2" customClass="ViewControllerEdit" customModule="ePostcard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XO6-q8-ANr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lSH-c4-5MU">
+                                <rect key="frame" x="16" y="80" width="343" height="567"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dch-c4-jf6" firstAttribute="bottom" secondItem="lSH-c4-5MU" secondAttribute="bottom" constant="20" id="Kjl-B1-W4d"/>
+                            <constraint firstItem="lSH-c4-5MU" firstAttribute="top" secondItem="Dch-c4-jf6" secondAttribute="top" constant="16" id="SaR-Q1-IWw"/>
+                            <constraint firstItem="Dch-c4-jf6" firstAttribute="trailing" secondItem="lSH-c4-5MU" secondAttribute="trailing" constant="16" id="TQg-Lq-nfP"/>
+                            <constraint firstItem="lSH-c4-5MU" firstAttribute="leading" secondItem="Dch-c4-jf6" secondAttribute="leading" constant="16" id="u3k-AG-Vxp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dch-c4-jf6"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3w0-fa-vKI"/>
+                    <navigationItem key="navigationItem" id="3w0-fa-vKI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Rxj-uk-c09">
+                            <connections>
+                                <segue destination="7lb-MU-hvp" kind="unwind" unwindAction="unwindToMainControllerWithSegue:" id="cTy-3M-wnN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageBack" destination="lSH-c4-5MU" id="mLE-Z5-4tF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0vQ-23-Qk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7lb-MU-hvp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2887" y="131"/>
+            <point key="canvasLocation" x="2885.5999999999999" y="130.88455772113943"/>
         </scene>
     </scenes>
 </document>
