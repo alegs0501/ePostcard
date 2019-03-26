@@ -14,6 +14,9 @@
 		2A63DA8C224995580007A324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A63DA8B224995580007A324 /* Assets.xcassets */; };
 		2A63DA8F224995580007A324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A63DA8D224995580007A324 /* LaunchScreen.storyboard */; };
 		2A63DA972249A4300007A324 /* ViewControllerFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A63DA962249A4300007A324 /* ViewControllerFront.swift */; };
+		2AC25D7A224A414A007F50C4 /* PostCardBacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D79224A414A007F50C4 /* PostCardBacks.swift */; };
+		2AC25D7F224A46CA007F50C4 /* TableViewControllerPostBacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D7E224A46CA007F50C4 /* TableViewControllerPostBacks.swift */; };
+		2AC25D81224A46E9007F50C4 /* TableViewCellPostBacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC25D80224A46E9007F50C4 /* TableViewCellPostBacks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		2A63DA8E224995580007A324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A63DA90224995580007A324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A63DA962249A4300007A324 /* ViewControllerFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFront.swift; sourceTree = "<group>"; };
+		2AC25D79224A414A007F50C4 /* PostCardBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardBacks.swift; sourceTree = "<group>"; };
+		2AC25D7E224A46CA007F50C4 /* TableViewControllerPostBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerPostBacks.swift; sourceTree = "<group>"; };
+		2AC25D80224A46E9007F50C4 /* TableViewCellPostBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellPostBacks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,11 @@
 		2A63DA80224995550007A324 /* ePostcard */ = {
 			isa = PBXGroup;
 			children = (
+				2AC25D82224A494B007F50C4 /* Select Image */,
+				2AC25D7B224A466D007F50C4 /* Postcard Backs */,
+				2AC25D78224A40BC007F50C4 /* Models */,
 				2A63DA81224995550007A324 /* AppDelegate.swift */,
 				2A63DA83224995550007A324 /* ViewController.swift */,
-				2A63DA962249A4300007A324 /* ViewControllerFront.swift */,
 				2A63DA85224995550007A324 /* Main.storyboard */,
 				2A63DA8B224995580007A324 /* Assets.xcassets */,
 				2A63DA8D224995580007A324 /* LaunchScreen.storyboard */,
@@ -68,6 +76,31 @@
 				2A63DA88224995550007A324 /* ePostcard.xcdatamodeld */,
 			);
 			path = ePostcard;
+			sourceTree = "<group>";
+		};
+		2AC25D78224A40BC007F50C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2AC25D79224A414A007F50C4 /* PostCardBacks.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2AC25D7B224A466D007F50C4 /* Postcard Backs */ = {
+			isa = PBXGroup;
+			children = (
+				2AC25D7E224A46CA007F50C4 /* TableViewControllerPostBacks.swift */,
+				2AC25D80224A46E9007F50C4 /* TableViewCellPostBacks.swift */,
+			);
+			path = "Postcard Backs";
+			sourceTree = "<group>";
+		};
+		2AC25D82224A494B007F50C4 /* Select Image */ = {
+			isa = PBXGroup;
+			children = (
+				2A63DA962249A4300007A324 /* ViewControllerFront.swift */,
+			);
+			path = "Select Image";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A63DA972249A4300007A324 /* ViewControllerFront.swift in Sources */,
+				2AC25D81224A46E9007F50C4 /* TableViewCellPostBacks.swift in Sources */,
+				2AC25D7A224A414A007F50C4 /* PostCardBacks.swift in Sources */,
+				2AC25D7F224A46CA007F50C4 /* TableViewControllerPostBacks.swift in Sources */,
 				2A63DA8A224995550007A324 /* ePostcard.xcdatamodeld in Sources */,
 				2A63DA84224995550007A324 /* ViewController.swift in Sources */,
 				2A63DA82224995550007A324 /* AppDelegate.swift in Sources */,

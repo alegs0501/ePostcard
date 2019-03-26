@@ -82,7 +82,9 @@ class ViewControllerFront: UIViewController {
         presentImagePicker()
     }
     
-
+    @IBAction func done(_ sender: Any) {
+    }
+    
 }
 
 // MARK: - UINavigationControllerDelegate

@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="642" y="131"/>
         </scene>
-        <!--Title-->
+        <!--Front Image-->
         <scene sceneID="Nfw-0B-Skj">
             <objects>
                 <viewController id="Qdm-s6-t1u" customClass="ViewControllerFront" customModule="ePostcard" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,12 +89,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="naM-c9-tQ5"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="JvN-Vu-81G">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="FEb-2e-XdE">
-                            <connections>
-                                <action selector="loadImage:" destination="Qdm-s6-t1u" id="4pg-OE-KeH"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Front Image" id="JvN-Vu-81G">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="done" id="9k2-gI-tf7">
+                                <connections>
+                                    <action selector="done:" destination="Qdm-s6-t1u" id="Hv4-gs-srh"/>
+                                    <segue destination="iPf-h7-OXu" kind="show" id="5vN-do-nq3"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="FEb-2e-XdE">
+                                <connections>
+                                    <action selector="loadImage:" destination="Qdm-s6-t1u" id="4pg-OE-KeH"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="filtersScrollView" destination="bOA-kd-ffg" id="5PY-A7-F2h"/>
@@ -104,6 +112,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyV-pz-d9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1429.5999999999999" y="130.88455772113943"/>
+        </scene>
+        <!--Back Image-->
+        <scene sceneID="Jzj-J7-9fP">
+            <objects>
+                <tableViewController id="iPf-h7-OXu" customClass="TableViewControllerPostBacks" customModule="ePostcard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="N5g-0F-797">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellBacks" rowHeight="250" id="lQz-IO-jyQ" customClass="TableViewCellPostBacks" customModule="ePostcard" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="250"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lQz-IO-jyQ" id="MxC-K9-99b">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ja7-0Z-55J">
+                                            <rect key="frame" x="16" y="11" width="343" height="228"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ja7-0Z-55J" firstAttribute="bottom" secondItem="MxC-K9-99b" secondAttribute="bottomMargin" id="8XJ-FV-EnA"/>
+                                        <constraint firstItem="Ja7-0Z-55J" firstAttribute="top" secondItem="MxC-K9-99b" secondAttribute="topMargin" id="SQP-de-Wva"/>
+                                        <constraint firstItem="Ja7-0Z-55J" firstAttribute="leading" secondItem="MxC-K9-99b" secondAttribute="leadingMargin" id="Zfg-i8-hDT"/>
+                                        <constraint firstItem="Ja7-0Z-55J" firstAttribute="trailing" secondItem="MxC-K9-99b" secondAttribute="trailingMargin" id="d4e-YE-CdX"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="backImageView" destination="Ja7-0Z-55J" id="Nvg-O1-gNV"/>
+                                    <segue destination="NLL-Ac-Sy2" kind="show" id="l09-Gt-n1t"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iPf-h7-OXu" id="sxG-dl-diR"/>
+                            <outlet property="delegate" destination="iPf-h7-OXu" id="y1c-9n-Ihh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Back Image" id="UrT-UJ-bHS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPh-eh-1Nc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2162.4000000000001" y="130.88455772113943"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wR7-80-ycj">
+            <objects>
+                <viewController id="NLL-Ac-Sy2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XO6-q8-ANr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Dch-c4-jf6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3w0-fa-vKI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0vQ-23-Qk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2887" y="131"/>
         </scene>
     </scenes>
 </document>
